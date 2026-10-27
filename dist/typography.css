@@ -1,0 +1,81 @@
+/* =====================================================
+   TYPOGRAPHY — แก้ฟอนต์และขนาดตัวอักษรได้ในไฟล์นี้
+   Inspired by the restrained typography of Apple's reference.
+   No Apple font files are downloaded or redistributed.
+   Noto Sans Thai is available under SIL Open Font License.
+   ===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Latin uses the device's UI font; Thai uses Noto Sans Thai. */
+  --font-ui: -apple-system, BlinkMacSystemFont, "Noto Sans Thai", "Segoe UI", sans-serif;
+  --font-heading: var(--font-ui);
+  --weight-body: 400;
+  --weight-heading: 600;
+  --hero-size: clamp(64px, 7vw, 104px);
+  --hero-line-height: 1.18;
+  --body-line-height: 1.85;
+}
+
+body {
+  font-family: var(--font-ui);
+  font-weight: var(--weight-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-heading);
+  letter-spacing: -0.025em;
+}
+
+.hero h1 {
+  font-size: var(--hero-size);
+  line-height: var(--hero-line-height);
+  letter-spacing: -0.045em;
+  font-weight: 700;
+  padding-bottom: 0.1em;
+}
+
+/* Subtle metallic depth; no thick bevel that obscures Thai marks. */
+.hero h1 .hero-accent {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: #747d66;
+  background: linear-gradient(155deg, #a0a98c 4%, #4e5c43 46%, #8c977a 75%, #657053);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 1px rgba(45, 58, 33, 0.06);
+}
+
+.hero-copy > p, .page-heading p, .prose {
+  line-height: var(--body-line-height);
+}
+
+.brand, .footer-brand { letter-spacing: -0.035em; }
+.brand { font-weight: 700; }
+.eyebrow, .brand small, .ticker { letter-spacing: 0.14em; }
+.story h3 { font-weight: 600; line-height: 1.55; }
+.article-layout h1 { line-height: 1.45; letter-spacing: -0.025em; }
+
+@media (max-width: 950px) {
+  :root { --hero-size: 76px; }
+}
+
+@media (max-width: 650px) {
+  :root { --hero-size: clamp(56px, 14vw, 72px); }
+  .hero h1 { letter-spacing: -0.04em; }
+}
+
+@media (forced-colors: active) {
+  .hero h1 .hero-accent {
+    background: none;
+    -webkit-text-fill-color: CanvasText;
+    color: CanvasText;
+    text-shadow: none;
+  }
+}
