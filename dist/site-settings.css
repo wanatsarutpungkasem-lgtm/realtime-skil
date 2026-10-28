@@ -1,0 +1,122 @@
+/* =====================================================
+   CONTACT + APPEARANCE
+   สีเริ่มต้นแก้ที่ :root ใน style.css
+   ข้อความ/ลิงก์ติดต่อแก้ใน CONTACTS ใน site-settings.js
+   ===================================================== */
+.appearance-control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  z-index: 30;
+}
+#appearance-button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  font-size: 25px;
+  display: grid;
+  place-items: center;
+}
+.appearance-panel {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  width: min(320px, calc(100vw - 32px));
+  padding: 20px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 16px 55px #00000024;
+}
+.appearance-panel[hidden] { display: none; }
+.appearance-heading { display: flex; align-items: center; justify-content: space-between; }
+.appearance-heading h2 { font-size: 19px; line-height: 1.5; }
+.appearance-panel #appearance-close {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 27px;
+}
+.appearance-panel p { color: var(--muted); font-size: 11px; line-height: 1.8; margin: 8px 0 16px; }
+.appearance-presets { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.appearance-panel .appearance-presets button {
+  width: 100%;
+  min-height: 44px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+  padding: 10px;
+}
+.appearance-panel .appearance-presets button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.appearance-field { display: flex; justify-content: space-between; align-items: center; padding-top: 15px; font-size: 13px; }
+.appearance-field input[type="color"] { width: 54px; height: 44px; border: 1px solid var(--line); border-radius: 9px; background: transparent; cursor: pointer; padding: 4px; }
+.appearance-panel .appearance-reset {
+  width: 100%;
+  height: auto;
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+}
+.appearance-panel .appearance-status { margin-bottom: 0; min-height: 20px; }
+.owner-contact { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+.owner-contact h2 { font-size: 17px; }
+/* Scope navigation overrides: the existing mobile nav rule is for the header only. */
+footer .contact-links {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  height: auto;
+  border: 0;
+}
+footer .contact-links a { display: inline-flex; align-items: center; min-height: 44px; border: 1px solid var(--line); border-radius: 30px; padding: 10px 16px; font-size: 12px; color: var(--ink); }
+footer .contact-links a:hover { background: var(--ink); color: var(--paper); }
+html[data-custom-theme] .hero-copy > p,
+html[data-custom-theme] .story p,
+html[data-custom-theme] .prose p,
+html[data-custom-theme] .prose ul,
+html[data-custom-theme] .filter-note,
+html[data-custom-theme] .page-heading p,
+html[data-custom-theme] .creator-credit { color: var(--muted); }
+html[data-custom-theme] .manifesto,
+html[data-custom-theme] .notice { background: var(--surface); border-color: var(--line); }
+html[data-custom-theme] .manifesto p { color: var(--muted); }
+html[data-custom-theme] .hero h1 .hero-accent {
+  background: none;
+  color: var(--title-color);
+  -webkit-text-fill-color: var(--title-color);
+  text-shadow: 0 2px 1px #0000000d;
+}
+html[data-custom-theme] .round-note,
+html[data-custom-theme] .brand-mark { background: var(--accent); color: var(--on-accent); }
+html[data-custom-theme] .category-card,
+html[data-custom-theme] .story-visual { color: #252621; }
+html[data-custom-theme] button:focus-visible,
+html[data-custom-theme] a:focus-visible,
+html[data-custom-theme] input:focus-visible { outline-color: var(--ink); }
+@media (max-width: 650px) {
+  .appearance-control { margin-left: 0; }
+  .header-actions { gap: 4px; }
+  .header-actions #saved { padding: 0 10px; }
+  .appearance-panel { padding: 16px; }
+}
+html[data-custom-theme] .floating-tag { color: #252621; }
+#appearance-button { padding: 0; }
