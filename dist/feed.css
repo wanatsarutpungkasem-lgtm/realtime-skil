@@ -1,0 +1,8 @@
+/* Article feed styling — edit independently from JavaScript. */
+.creator-credit { margin-top: 20px; font-size: 12px; color: #545c48; }
+.feed-paragraph { white-space: pre-wrap; overflow-wrap: anywhere; }
+.feed-sources { padding-left: 24px; overflow-wrap: anywhere; }
+.feed-sources a { text-decoration: underline; text-underline-offset: 4px; }
+#approved-feed .story { padding: 24px; border: 1px solid var(--line); border-radius: 16px; }
+#approved-feed .source-link { margin: 18px 0 0; min-height: 44px; }
+body[data-page="feed-article"] .article-layout { padding-top: 30px; }
