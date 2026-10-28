@@ -6,3 +6,17 @@
 #approved-feed .story { padding: 24px; border: 1px solid var(--line); border-radius: 16px; }
 #approved-feed .source-link { margin: 18px 0 0; min-height: 44px; }
 body[data-page="feed-article"] .article-layout { padding-top: 30px; }
+
+
+.feed-tools { display:flex; gap:16px; flex-wrap:wrap; margin:24px 0 12px; }
+.feed-tools label { display:flex; flex-direction:column; gap:8px; font-size:14px; flex:1; min-width:180px; }
+.feed-tools input,.feed-tools select { width:100%; min-height:48px; padding:10px 14px; border:1px solid var(--line); border-radius:10px; background:var(--paper); color:var(--ink); font:inherit; }
+#feed-more { margin-top:24px; min-height:44px; }
+#feed-more[hidden] { display:none; }
+.sample-stories { margin:28px 0; }
+.sample-stories>summary { cursor:pointer; padding:16px; border:1px solid var(--line); border-radius:12px; }
+
+.latest-worlds { margin:24px 0; padding:20px; border:1px solid var(--line); border-radius:14px; }
+.latest-worlds h3 { margin:0 0 12px; font-size:18px; }
+.latest-worlds a { display:grid; grid-template-columns:110px 1fr; gap:12px; padding:12px 0; border-top:1px solid var(--line); line-height:1.7; font-size:14px; }
+@media(max-width:650px){ .latest-worlds a { grid-template-columns:1fr; gap:4px; } }

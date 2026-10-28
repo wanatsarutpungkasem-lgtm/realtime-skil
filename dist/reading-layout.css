@@ -32,3 +32,9 @@ body[data-page="feed-article"] .prose[data-reading-layout] {
 @media (max-width: 650px) {
   body[data-page="feed-article"] .prose[data-reading-layout] { font-size: 16px; line-height: 2; margin-top: 28px; }
 }
+
+.report-toc { border:1px solid var(--line); padding:16px 20px; border-radius:14px; margin:24px 0; }
+.report-toc summary { cursor:pointer; font-weight:700; min-height:32px; }
+.report-toc nav { position:static; height:auto; display:flex; flex-direction:column; align-items:stretch; gap:4px; border:0; }
+.report-toc nav a { padding:10px 0; font-size:15px; line-height:1.7; min-height:44px; color:var(--ink); }
+.report-heading { scroll-margin-top:24px; }

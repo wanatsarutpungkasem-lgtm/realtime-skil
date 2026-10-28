@@ -21,13 +21,51 @@
     if (!main || main.querySelector('#approved-feed')) return;
     const hash = location.hash || '#/';
     if (!/^#\/(?:$|archive$|category\/)/.test(hash)) return;
-    const category = hash.match(/^#\/category\/(it|apple|skin|style)$/)?.[1];
-    const items = articles.filter(a=>!category || a.category === category);
-    if (!items.length) return;
-    const section = document.createElement('section');section.id='approved-feed';section.className='section wrap';
-    section.innerHTML=`<div class="section-head"><div><div class="eyebrow">FROM THE EDITOR'S DESK</div><h2>เรื่องใหม่จากคลังของเรา</h2></div></div><p class="filter-note">รายงานที่ AI รวบรวมจาก 4 หมวด · ยังไม่ได้ตรวจยืนยันทุกรายการ · วันที่แสดงคือเวลาแก้ไขต้นฉบับ</p><div class="article-grid">${items.map(a=>`<article class="story"><div class="story-top"><span class="category">${escape(labels[a.category])}</span><span class="status">${a.reviewStatus==='unverified'?'AI รวบรวม · รอตรวจ':'บทความ'}</span><span>${escape(date(a.updatedAt))}</span></div><h3><a href="${escape(new URL('article.html?id='+encodeURIComponent(a.id),base).href)}">${escape(a.title)}</a></h3><p>${escape(a.body.slice(0,160))}${a.body.length>160?'…':''}</p><a class="source-link" href="${escape(new URL('article.html?id='+encodeURIComponent(a.id),base).href)}">อ่านบทความ ↗</a></article>`).join('')}</div>`;
-    const target=main.querySelector('#stories');
-    if(target)target.before(section);else main.append(section);
+    const routeCategory = hash.match(/^#\/category\/(it|apple|skin|style)$/)?.[1];
+    const section = document.createElement('section');
+    section.id = 'approved-feed'; section.className = 'section wrap';
+    section.innerHTML = `<div class="section-head"><div><div class="eyebrow">DAILY READING</div><h2>รายงานจากคลังของเรา</h2></div></div><p class="filter-note">AI รวบรวม · ยังไม่ได้ตรวจยืนยันทุกรายการ · วันที่แสดงคือเวลาแก้ไขต้นฉบับ</p><div class="feed-tools"><label>ค้นหารายงาน<input type="search" id="feed-search" placeholder="เช่น Anker, Apple, ผิว" aria-describedby="feed-search-help"></label><label>หมวด<select id="feed-category" aria-label="หมวดรายงาน"><option value="">ทุกหมวด</option>${Object.entries(labels).map(([id,name])=>`<option value="${id}">${name}</option>`).join('')}</select></label></div><p id="feed-search-help" class="filter-note">ค้นจากชื่อเรื่องและข้อความย่อของรายงานที่ขึ้นเว็บแล้ว</p><p id="feed-result" role="status"></p><div class="article-grid" id="feed-grid"></div><button type="button" id="feed-more" class="chip">โหลดเพิ่มอีก 12 เรื่อง</button>`;
+    const target = main.querySelector('#stories');
+    if (target) {
+      target.before(section);
+      const examples = document.createElement('details'); examples.className = 'sample-stories';
+      const summary = document.createElement('summary'); summary.textContent = 'บทความตัวอย่างสำหรับดูรูปแบบเว็บไซต์';
+      target.before(examples); examples.append(summary, target);
+      const oldSearch = target.querySelector('#search');
+      if (oldSearch) oldSearch.closest('label').querySelector('span').textContent = 'ค้นหาเฉพาะบทความตัวอย่าง';
+    } else main.append(section);
+    const legacy = main.querySelector('#drive-list');
+    if (legacy) legacy.closest('section').hidden = true;
+    if (hash === '#/' || hash === '') {
+      const latest = document.createElement('aside'); latest.className = 'latest-worlds';
+      const title = document.createElement('h3'); title.textContent = 'เรื่องล่าสุดของแต่ละหมวด'; latest.append(title);
+      Object.keys(labels).forEach(category=>{
+        const article = articles.filter(a=>a.category===category).sort((a,b)=>Date.parse(b.updatedAt)-Date.parse(a.updatedAt))[0];
+        if (!article) return;
+        const link = document.createElement('a'); link.href = new URL('article.html?id='+encodeURIComponent(article.id),base).href;
+        const tag = document.createElement('strong'); tag.textContent = labels[category];
+        const text = document.createElement('span'); text.textContent = article.title;
+        link.append(tag,text); latest.append(link);
+      });
+      section.querySelector('.feed-tools').before(latest);
+    }
+    const search = section.querySelector('#feed-search');
+    const select = section.querySelector('#feed-category');
+    select.value = routeCategory || '';
+    let limit = 12;
+    const sorted = articles.slice().sort((a,b)=>Date.parse(b.updatedAt)-Date.parse(a.updatedAt));
+    function draw() {
+      const query = search.value.trim().toLocaleLowerCase();
+      const matches = sorted.filter(a=>(!select.value || a.category===select.value) && (!query || (a.title+' '+a.body).toLocaleLowerCase().includes(query)));
+      const shown = matches.slice(0,limit);
+      section.querySelector('#feed-result').textContent = matches.length ? `พบ ${matches.length} เรื่อง · แสดง ${shown.length} เรื่อง` : 'ไม่พบรายงาน ลองเปลี่ยนคำค้นหรือหมวดหมู่';
+      section.querySelector('#feed-grid').innerHTML = shown.map(a=>`<article class="story"><div class="story-top"><span class="category">${escape(labels[a.category])}</span><span class="status">${a.reviewStatus==='unverified'?'AI รวบรวม · รอตรวจ':'บทความ'}</span><span>${escape(date(a.updatedAt))}</span></div><h3><a href="${escape(new URL('article.html?id='+encodeURIComponent(a.id),base).href)}">${escape(a.title)}</a></h3><p>${escape(a.body.slice(0,160))}${a.body.length>160?'…':''}</p><a class="source-link" href="${escape(new URL('article.html?id='+encodeURIComponent(a.id),base).href)}">อ่านบทความ ↗</a></article>`).join('');
+      section.querySelector('#feed-more').hidden = shown.length >= matches.length;
+    }
+    search.addEventListener('input',()=>{limit=12;draw();});
+    select.addEventListener('change',()=>{limit=12;draw();});
+    section.querySelector('#feed-more').addEventListener('click',()=>{limit+=12;draw();});
+    draw();
   }
   async function renderArticle() {
     if(document.body.dataset.page!=='feed-article')return;
@@ -51,3 +89,4 @@
   if(main)new MutationObserver(cards).observe(main,{childList:true});
   credit();
 })();
+

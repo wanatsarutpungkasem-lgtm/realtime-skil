@@ -36,6 +36,19 @@
       });
       prose.replaceChildren(fragment);
       prose.dataset.readingLayout = 'true';
+      const headings = Array.from(prose.querySelectorAll('.report-heading'));
+      if (headings.length > 1) {
+        const toc = document.createElement('details'); toc.className = 'report-toc';
+        const title = document.createElement('summary'); title.textContent = 'สารบัญ — เลือกหัวข้อที่อยากอ่าน';
+        const nav = document.createElement('nav'); nav.setAttribute('aria-label','สารบัญบทความ');
+        headings.forEach((heading,index)=>{
+          heading.id = 'report-section-' + (index+1); heading.tabIndex = -1;
+          const link = document.createElement('a'); link.href = '#' + heading.id; link.textContent = heading.textContent;
+          link.addEventListener('click', event=>{event.preventDefault();heading.scrollIntoView({behavior:'instant',block:'start'});heading.focus({preventScroll:true});});
+          nav.append(link);
+        });
+        toc.append(title,nav); prose.before(toc);
+      }
     });
   }
   const main = document.querySelector('main');
