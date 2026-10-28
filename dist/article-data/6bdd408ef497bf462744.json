@@ -1,0 +1,16 @@
+{
+  "id": "6bdd408ef497bf462744",
+  "title": "IT น่ารู้ - สาระและคู่มือเทคโนโลยี โดย IT ชาย",
+  "category": "it",
+  "updatedAt": "2026-08-21T06:57:30.436Z",
+  "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+  "reviewStatus": "unverified",
+  "body": "IT น่ารู้ & คู่มือสาระเทคโนโลยีสำคัญ (รวบรวมโดย IT ชาย)\nเอกสารรวบรวมองค์ความรู้ด้านเทคโนโลยีสารสนเทศ ความปลอดภัยไซเบอร์ เคล็ดลับการดูแลคอมพิวเตอร์ และแนวทางการประยุกต์ใช้ AI ในองค์กร เพื่อเพิ่มประสิทธิภาพและความปลอดภัยในการทำงานประจำวัน\n1. ความปลอดภัยทางไซเบอร์ (Cybersecurity Best Practices)\nกฎการสำรองข้อมูล 3-2-1 (Backup Rule): เก็บข้อมูล 3 ชุด บนสื่อบันทึก 2 ชนิด (เช่น Cloud Storage และ External Hard drive) และเก็บไว้นอกสถานที่ 1 ชุด เพื่อป้องกันความเสียหายจาก Ransomware หรืออุปกรณ์ชำรุด\nการตั้งรหัสผ่านและการเปิด 2FA/MFA: ใช้การยืนยันตัวตนแบบสองขั้นตอน (Two-Factor Authentication) ร่วมกับรหัสผ่านที่รัดกุม 12 ตัวอักษรขึ้นไป แนะนำให้ใช้แอป Authenticator เช่น Google Authenticator\nการระวังภัย Phishing & Social Engineering: ตรวจสอบโดเมนอีเมลผู้ส่ง (@domain) และ URL ของลิงก์ก่อนคลิกหรือกรอกรหัสผ่านเสมอ (อ้างอิงข้อมูลจาก Microsoft Security และ AWS)\nการใช้ AI ในความมั่นคงปลอดภัย: องค์กรยุคใหม่นำ AI มาช่วยตรวจจับภัยคุกคามและการโจมตีแบบเรียลไทม์ (อ้างอิงจาก Intel Thailand และ ETDA)\n2. ทริคการดูแลและเพิ่มความเร็วคอมพิวเตอร์ (PC Optimization & Troubleshooting)\nการล้างไฟล์ขยะและแคชชั่วคราว (%temp%): กด Win + R พิมพ์ %temp% แล้วลบไฟล์ขยะ ช่วยคืนพื้นที่ไดรฟ์ C และลดอาการหน่วง\nการจัดการ Startup Apps: ปิดโปรแกรมที่รันอัตโนมัติตอนเปิดเครื่องผ่าน Task Manager เพื่อให้เครื่องบูตเร็วขึ้น\nคีย์ลัดช่วยชีวิตในการทำงาน:\nCtrl + Shift + Esc: เปิด Task Manager เพื่อปิดโปรแกรมที่ค้าง (End Task) ทันที\nCtrl + Shift + T: กู้คืนแท็บเบราว์เซอร์ที่เผลอปิดล่าสุด\nWin + L / Ctrl + Cmd + Q: ล็อกหน้าจอทันทีเมื่อลุกจากโต๊ะทำงาน\nWin + Shift + S / Cmd + Shift + 4: แคปหน้าจอแบบเลือกพื้นที่\n3. การทำงานบน Cloud และการประยุกต์ใช้ AI ในองค์กร\nการบริหารจัดการ Cloud Storage (Google Drive / Microsoft 365): แชร์ไฟล์งานผ่าน Cloud เพื่อแก้ปัญหาไฟล์ชนกัน (Version Conflict) และหมั่นตรวจสอบสิทธิ์การแชร์ (Sharing Permissions) ไม่ตั้งเป็น Public โดยไม่จำเป็น (อ้างอิงแนวทางจาก TechSpace)\nการใช้งาน AI อย่างปลอดภัย (AI Governance): หลีกเลี่ยงการนำข้อมูลความลับ ข้อมูลส่วนบุคคล (PII) หรือรหัสผ่านกรอกลงใน AI Chatbots สาธารณะ\n4. ตาราง Checklist ความปลอดภัยไอทีประจำวันและประจำสัปดาห์\nรอบการตรวจสอบ\nรายการปฏิบัติเพื่อความปลอดภัย\nประจำวัน\nล็อกหน้าจอทุกครั้งเมื่อไม่อยู่ที่โต๊ะ, สังเกตอีเมลและลิงก์แปลกปลอม\nประจำสัปดาห์\nสำรองข้อมูลขึ้น Cloud, อัปเดตแพตช์ความปลอดภัยของ OS และเบราว์เซอร์\nประจำเดือน\nตรวจสอบและยกเลิกสิทธิ์การแชร์ไฟล์ที่ไม่ใช้งานแล้ว",
+  "sources": [
+    "https://www.microsoft.com/th-th/security/business/security-101/what-is-ai-for-cybersecurity",
+    "https://aws.amazon.com/th/what-is/cybersecurity/",
+    "https://www.thailand.intel.com/content/www/th/th/learn/ai-in-cybersecurity.html",
+    "https://www.etda.or.th/getattachment/Our-Service/AIGC/Research-and-Recommendation/03-UseofAIinCybersecurityBenefitsandRisks-Eakacet.pdf.aspx?lang=th-TH",
+    "https://techspace.co.th/"
+  ]
+}
