@@ -2,6 +2,62 @@
   "schemaVersion": 2,
   "articles": [
     {
+      "id": "2b4e4f4eed150687204e",
+      "title": "เสื้อผ้าแบรนด์ไทย (อัปเดต 9 พ.ย. 2026)",
+      "category": "style",
+      "updatedAt": "2026-11-09T04:07:11.720Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "คู่มือและรายงานเสื้อผ้าผู้ชายแบรนด์ไทย สไตล์วันสบายๆ ทรงเท่ หล่อ ฮิตมาแรง\nงบประมาณ 1,000 – 3,000 บาท | อัปเดตข้อมูลล่าสุด: จันทร์ที่ 9 พฤศจิกายน 2026\n🎯 สรุปฟันธง 4 สไตล์เด่นเคานต์ดาวน์สู่ 11.11 Mega Sale:\n• สายสมาร์ตแคช",
+      "sources": [
+        "https://smileyhound.com/",
+        "https://madmatterstore.com/",
+        "https://carnivalbkk.com/",
+        "https://www.indigoskinjeans.com/",
+        "https://painkilleratelier.com/",
+        "https://ssapnyc.com/"
+      ],
+      "contentPath": "article-data/2b4e4f4eed150687204e.json"
+    },
+    {
+      "id": "415b0b2ff648a9bbe371",
+      "title": "สรุปเทรนด์ Apple ประจำวัน (9 พฤศจิกายน 2026) - ฉบับ Gen Z",
+      "category": "apple",
+      "updatedAt": "2026-11-09T03:47:51.275Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "🍎 สรุปเทรนด์ Apple ประจำวัน (9 พฤศจิกายน 2026) ฉบับ Gen Z 🚀\n(Daily Apple Trends & Insights: November 9, 2026 - Gen Z Edition)\n🏛️ ข้อมูลอ้างอิงสถานที่จัดงาน: Steve Jobs Theater ณ Apple Park\n(สถานที่จัดงานแถลงข่าวและอีเ",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Theater_-_external.jpg",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "https://www.macrumors.com/2026/11/08/siri-ai-rumored-to-become-more-agentic/",
+        "https://www.macrumors.com/2026/11/08/apple-tweaks-ios-28-development-process/",
+        "https://forums.appleinsider.com/discussion/246470",
+        "https://forums.appleinsider.com/discussion/246466",
+        "https://9to5mac.com/2026/10/27/apples-european-government-affairs-chief-to-speak-at-web-summit-2026/",
+        "https://buyersguide.macrumors.com/"
+      ],
+      "contentPath": "article-data/415b0b2ff648a9bbe371.json"
+    },
+    {
+      "id": "5a2b9af8cf7dc24045aa",
+      "title": "IT น่ารู้ 2026 - ประจำวันที่ 9 พ.ย. 2026 (Bose QC Ultra 2, Xiaomi Pet Feeder 2 & UGREEN Nexode 130W)",
+      "category": "it",
+      "updatedAt": "2026-11-09T03:41:57.578Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "IT น่ารู้ 2026 - ประจำวันที่ 9 พฤศจิกายน 2026\nรวม 3 นวัตกรรมแกดเจ็ตตัวตึง + สคริปต์คลิปสั้นทำเงิน & กลยุทธ์คอนเทนต์สไตล์ Gen Z\n1. เจาะลึก 3 เทรนด์ IT ตัวตึงประจำวัน (Tech Highlights 2026)\n1.1 Bose QuietComfort Ultra Earb",
+      "sources": [
+        "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html",
+        "https://www.whathifi.com/headphones/wireless-earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen",
+        "https://www.mi.com/ae-en/product/xiaomi-smart-pet-food-feeder-2/",
+        "https://www.mi.com/ae-en/product/xiaomi-smart-pet-food-feeder-2/specs/",
+        "https://uk.ugreen.com/products/ugreen-nexode-power-bank-130w-20000mah",
+        "https://eu.ugreen.com/products/ugreen-nexode-power-bank-130w-20000mah"
+      ],
+      "contentPath": "article-data/5a2b9af8cf7dc24045aa.json"
+    },
+    {
       "id": "6720181157d8599e5039",
       "title": "Skincare Trends 8 พ.ย. 2026 - Kombucha & Galactomyces สมดุลจุลินทรีย์ผิว Glass Skin ฉบับ Gen Z",
       "category": "skin",
