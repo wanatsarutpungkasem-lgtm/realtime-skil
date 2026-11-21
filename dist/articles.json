@@ -2,6 +2,63 @@
   "schemaVersion": 2,
   "articles": [
     {
+      "id": "f8c3afaad3ea30d534a8",
+      "title": "Skincare Trends 21 พ.ย. 2026 - Neurocosmetics & Adaptogens กู้ผิวเครียดนอนดึกฉบับ Gen Z",
+      "category": "skin",
+      "updatedAt": "2026-11-21T03:46:27.373Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "🧠 เทรนด์สกินแคร์ 2026 | Daily Insight ประจำวันที่ 21 พฤศจิกายน 2026\nNeurocosmetics & Adaptogens: เทรนด์กู้ผิวเครียดนอนดึก เชื่อมโยงสมดุลผิวและอารมณ์ฉบับ Gen Z\nGen Z Trend Snapshot: ในปี 2026 วัยรุ่น Gen Z ไม่ได้มองสกินแ",
+      "sources": [
+        "https://www.futuremarketinsights.com/reports/neurocosmetic-ingredients-market",
+        "https://blog.weareprovital.com/gen-z-beauty-trends/",
+        "https://dataintelo.com/report/global-high-end-botanical-herbal-skin-care-market",
+        "https://commons.wikimedia.org/wiki/File:Rhodiola_rosea_a2.jpg",
+        "https://creativecommons.org/licenses/by-sa/3.0/",
+        "https://commons.wikimedia.org/wiki/File:Withania_somnifera_illustration.jpg",
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "contentPath": "article-data/f8c3afaad3ea30d534a8.json"
+    },
+    {
+      "id": "f8f6abab988a6ca96264",
+      "title": "IT น่ารู้ 2026 - ประจำวันที่ 21 พฤศจิกายน 2026",
+      "category": "it",
+      "updatedAt": "2026-11-21T03:45:02.306Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "IT น่ารู้ 2026: สรุปข่าวเทคโนโลยีและเทรนด์ไอทีล่าสุด ฉบับ Gen Z\nประจำวันที่: 21 พฤศจิกายน 2026 | เรียบเรียงโดย: ทีมงาน @it-น่ารู้\nสวัสดีวันเสาร์ชาว Gen Z ทุกคนครับ วันนี้ @it-น่ารู้ คัดสรร 3 ข่าวเทคโนโลยีและเทรนด์ไอทีสดใ",
+      "sources": [
+        "https://www.businesswire.com/news/home/20261118955745/en/JEDEC-Previews-Next-Generation-DDR6-DRAM-Higher-Performance-Greater-Capacity-Improved-Power-Efficiency-and-Data-Center-Class-Reliability",
+        "https://www.appdisqus.com/jedec-ddr6-spec-preview-4x-bandwidth/",
+        "https://developer.android.com/blog/posts/google-play-adaptive-quality-standards",
+        "https://www.ghacks.net/2026/11/20/google-play-will-block-app-updates-that-dont-work-properly-on-foldables-from-april-2027/",
+        "https://www.gizmoth.com/everything-in-one-post-tech-news-update-for-november-21-2026/"
+      ],
+      "contentPath": "article-data/f8f6abab988a6ca96264.json"
+    },
+    {
+      "id": "b046fb714408994d8453",
+      "title": "สรุปเทรนด์ Apple ประจำวัน (21 พฤศจิกายน 2026) - ฉบับ Gen Z",
+      "category": "apple",
+      "updatedAt": "2026-11-21T03:32:14.241Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "🍎 สรุปเทรนด์ Apple ประจำวัน (21 พฤศจิกายน 2026) ฉบับ Gen Z 🚀\n(Daily Apple Trends & Insights: November 21, 2026 - Gen Z Edition)\n🏛️ ข้อมูลอ้างอิงสถานที่จัดงาน: Steve Jobs Theater ณ Apple Park\n(ภาพประกอบสถานที่จัดงานแถล",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Theater_-_external.jpg",
+        "https://creativecommons.org/licenses/by/4.0/",
+        "https://www.macrumors.com/2026/11/20/iphone-air-2-and-iphone-18-dummy-models/",
+        "https://www.macrumors.com/2026/11/20/apple-reveals-2026-black-friday-deals/",
+        "https://www.macrumors.com/2026/11/20/microsoft-to-retire-to-do-apps/",
+        "https://9to5mac.com/2026/11/20/daily-november-20-2026/",
+        "https://9to5mac.com/2026/11/10/end-of-an-era-apple-support-community-forums-will-permanently-close-on-november-20/",
+        "https://appleinsider.com/articles/26/11/11/apple-support-communities-were-sound-and-fury-but-sometimes-so-useful",
+        "https://buyersguide.macrumors.com/"
+      ],
+      "contentPath": "article-data/b046fb714408994d8453.json"
+    },
+    {
       "id": "4c0febebc9ff8a69a32a",
       "title": "IT น่ารู้ 2026 - ประจำวันที่ 20 พฤศจิกายน 2026",
       "category": "it",
