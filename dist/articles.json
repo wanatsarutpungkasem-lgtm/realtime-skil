@@ -2,6 +2,42 @@
   "schemaVersion": 2,
   "articles": [
     {
+      "id": "c14238a7ab29c5b28732",
+      "title": "IT น่ารู้ 2026 - ประจำวันที่ 25 พฤศจิกายน 2026",
+      "category": "it",
+      "updatedAt": "2026-11-25T03:38:04.284Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "IT น่ารู้ 2026: สรุปข่าวเทคโนโลยีและเทรนด์ไอทีล่าสุด ฉบับ Gen Z\nประจำวันที่: 25 พฤศจิกายน 2026 | เรียบเรียงโดย: ทีมงาน @it-น่ารู้\nสวัสดีวันพุธชาว Gen Z ทุกคนครับ วันนี้ @it-น่ารู้ คัดสรร 3 ประเด็นเทคโนโลยีและแกดเจ็ตสดใหม",
+      "sources": [
+        "https://www.gizmoth.com/everything-you-need-to-know-in-one-post-tech-news-update-for-november-25-2026/"
+      ],
+      "contentPath": "article-data/c14238a7ab29c5b28732.json"
+    },
+    {
+      "id": "44031659ddd08d2ad341",
+      "title": "Skincare Trends 25 พ.ย. 2026 - Retinaldehyde & Iron Oxides คู่หู Prejuvenation กู้ผิวเนียนใสและกันแสงสีฟ้าฉบับ Gen Z",
+      "category": "skin",
+      "updatedAt": "2026-11-25T03:36:55.912Z",
+      "author": "ดูแลเว็บไซต์โดย Wanatsarut · อ้ายโอห์ม แฟนเชลซี",
+      "reviewStatus": "unverified",
+      "body": "✨ เทรนด์สกินแคร์ 2026 | Daily Insight ประจำวันที่ 25 พฤศจิกายน 2026\nRetinaldehyde & Iron Oxides: คู่หู Prejuvenation กู้ผิวเนียนใสและกันแสงสีฟ้าฉบับ Gen Z\nGen Z Trend Snapshot: ปี 2026 วัยรุ่น Gen Z กำลังอินกับแนวคิด \"Pr",
+      "sources": [
+        "https://superpower.com/guides/skincare-ingredients/retinaldehyde",
+        "https://greenpointapp.co/guides/retinoids-explained/",
+        "https://pureseoul.co.uk/blogs/k-beauty-catch-up/beginners-guide-to-retinolretinal",
+        "https://aqualogica.in/blogs/sunscreen/what-is-tinted-sunscreen-how-it-works-benefits-and-how-to-apply",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7894303/",
+        "https://www.blackbirdskincare.com/2025/08/21/gen-z-skincare-trends/",
+        "https://boldpurity.com/blogs/skin-science-journal/retinol-vs-retinal-vs-tretinoin-types-of-retinoids",
+        "https://maelove.com/blogs/skincare-science/what-s-the-difference-between-retinol-and-retinaldehyde-retinal-and-which-one-should-you-use",
+        "https://www.mdpi.com/1467-3045/48/9/921",
+        "https://commons.wikimedia.org/wiki/File:All-trans-Retinal.svg",
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "contentPath": "article-data/44031659ddd08d2ad341.json"
+    },
+    {
       "id": "8c0747b24bfc27a9812b",
       "title": "สรุปเทรนด์ Apple ประจำวัน (25 พฤศจิกายน 2026) - ฉบับ Gen Z",
       "category": "apple",
